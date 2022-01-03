@@ -44,7 +44,7 @@ def main():
             print("balance found!", balance/1e+18, "ETH")
             gas = getgas(web3)
             if gas*21000 < balance:
-                if prebalance != balance:
+                if prevbalance != balance:
                     try:
                         txid = transfer(web3, privatekey, address, to, gas, balance-gas*21000)
                     except:
