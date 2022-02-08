@@ -22,7 +22,7 @@ def transfer(web3, privatekey, from_addr, to, gas, value):
     return web3.toHex(txid)
 
 def main():
-    print("// aw.py by phonkuser v1.0 // fuck vatos\n// buy cryptochecker, best cryptowallets checker - https://lolz.guru/threads/2915136")
+    print()
 
     if not os.path.isfile("aw.json"):
         print("aw.json doesn't exists. make sure you extracted all files from repo!")
